@@ -3,9 +3,9 @@ package com.zetcode;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class ShootingMissilesEx extends JFrame {
+public class CollisionEx extends JFrame {
 
-    public ShootingMissilesEx() {
+    public CollisionEx() {
         
         initUI();
     }
@@ -14,10 +14,10 @@ public class ShootingMissilesEx extends JFrame {
         
         add(new Board());
         
-        setSize(4000, 3000);
-        setResizable(true);
+        setResizable(false);
+        pack();
         
-        setTitle("Platformer");
+        setTitle("Collision");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -27,8 +27,7 @@ public class ShootingMissilesEx extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                
-                ShootingMissilesEx ex = new ShootingMissilesEx();
+                CollisionEx ex = new CollisionEx();
                 ex.setVisible(true);
             }
         });

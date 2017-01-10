@@ -12,7 +12,8 @@ public class Craft extends Sprite {
     private int x;
     private int y;
     private Image image;
-    private ArrayList missiles;
+    private ArrayList<Missile> missiles;
+
   
 
     public Craft(int x, int y) {
@@ -27,7 +28,7 @@ public class Craft extends Sprite {
         image = ii.getImage().getScaledInstance(120, 120, Image.SCALE_SMOOTH);
        
         x = 20;
-        y = 800;   
+        y = 670;   
         
         missiles = new ArrayList();
         loadImage("craft.png"); 
@@ -61,7 +62,7 @@ public class Craft extends Sprite {
 
         int key = e.getKeyCode();
         
-        if (key == KeyEvent.VK_SPACE) {
+        if (key == KeyEvent.VK_ENTER) {
             fire();
         }
 
@@ -83,7 +84,7 @@ public class Craft extends Sprite {
         
         int key = e.getKeyCode();
         
-        if (key == KeyEvent.VK_SPACE) {
+        if (key == KeyEvent.VK_ENTER) {
             fire();
         }
         

@@ -2,8 +2,8 @@ package com.zetcode;
 
 public class Missile extends Sprite {
 
-    private final int BOARD_WIDTH = 390;
-    private final int MISSILE_SPEED = 2;
+    private final int BOARD_WIDTH = 7000;
+    private final int MISSILE_SPEED = 10;
 
     public Missile(int x, int y) {
         super(x, y);
@@ -13,7 +13,7 @@ public class Missile extends Sprite {
     
     private void initMissile() {
         
-        loadImage("missile.png");  
+        loadImage("images/missile.png");  
         getImageDimensions();
     }
 
